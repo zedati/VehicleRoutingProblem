@@ -10,10 +10,8 @@ solution = alg.Solution(datamapping.DataMapper())
 greedy_heuristic = greedySearch.GreedySearch(solution.solution)
 greedy_heuristic.run(sort=True)
 solution.value = solution.eval()
-print (solution.value)
 
-
-max_iterations = 10
+max_iterations = 50
 tabu_search = tabu.TabuSearch(solution, max_iterations)
 print ("Starting tabu search")
 
